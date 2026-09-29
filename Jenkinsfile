@@ -15,10 +15,10 @@ pipeline {
             }
         }
 
-        // stage('Build APK') {
-        //     steps {
-        //         bat 'flutter build apk --release'
-        //     }
-        // }
+        stage('Build Web') {
+            steps {
+                bat 'flutter build web --release'
+            }
+        }
     }
 }
